@@ -1,4 +1,4 @@
-package com.danila;
+package com.danila.conditions;
 
 import java.util.Scanner;
 

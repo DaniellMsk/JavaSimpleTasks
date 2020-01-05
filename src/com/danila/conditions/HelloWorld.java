@@ -1,4 +1,4 @@
-package com.danila;
+package com.danila.conditions;
 
 public class HelloWorld {
     public static void main(String[] args) {
