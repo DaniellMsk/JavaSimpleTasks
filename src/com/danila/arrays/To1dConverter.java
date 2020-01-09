@@ -8,10 +8,10 @@ public class To1dConverter {
                             {2, 3, 5},
                             {8, 9, 6, 4} };
 
-        System.out.println(Arrays.toString(converter(array)));
+        System.out.println(Arrays.toString(linearize(array)));
     }
 
-    public static int[] converter (int [][] array){
+    public static int[] linearize (int [][] array){
         int relultLength = 0;
 
         for (int i = 0; i < array.length; i++) {
