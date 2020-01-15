@@ -1,6 +1,9 @@
-package com.danila.oop.computer;
+package com.danila.polymorphism.monitor;
 
-public class Computer {
+import com.danila.oop.computer.HDD;
+import com.danila.oop.computer.RAM;
+
+public abstract class Computer {
     private String name;
 
     private HDD hdd;

@@ -9,9 +9,9 @@ public class TestComputer {
         HDD hddSeagate = new HDD("Seagate", 512);
         HDD hddSamsung = new HDD("Samsung", 1024);
 
-        Computer computerFirst = new Computer(hddSeagate, ramCrusial);
-        Computer computerSecond = new Computer(hddSamsung, ramKingston);
-        Computer computerThird = new Computer(hddSamsung, ramHynix);
+        Computer computerFirst = new Computer(hddSeagate, ramCrusial, "Asus");
+        Computer computerSecond = new Computer(hddSamsung, ramKingston, "Mac");
+        Computer computerThird = new Computer(hddSamsung, ramHynix, "Xiaomi");
 
         computerFirst.on();
         computerSecond.on();
