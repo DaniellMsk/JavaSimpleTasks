@@ -1,26 +1,26 @@
 package com.danila.polymorphism.heroes;
 
-public abstract class Hero implements Mortal {
+public abstract class Enemy implements Mortal {
     private String name;
     private int health;
     private int attack;
 
-    public Hero(String name, int health, int attack) {
+    public Enemy(String name, int health, int attack) {
         this.name = name;
         this.health = health;
         this.attack = attack;
     }
 
-    public void takeDamage(int enemyAttack) {
-        health -= enemyAttack;
+    public abstract void attackHero(Hero hero);
+
+    public void takeDamage(int heroAttack) {
+        health -= heroAttack;
         if (!isAlive()){
             health = 0;
             System.out.println(name + " убит!");
         }
         System.out.println("Оставшееся здоровье: " + health);
     }
-
-    public abstract void attackEnemy(Enemy enemy);
 
     @Override
     public boolean isAlive() {
@@ -31,11 +31,19 @@ public abstract class Hero implements Mortal {
         return name;
     }
 
-    public int getAttack() {
-        return attack;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setAttack(int attack) {
-        this.attack = attack;
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getAttack() {
+        return attack;
     }
 }
