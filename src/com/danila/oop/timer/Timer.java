@@ -24,4 +24,8 @@ public class Timer {
     public void printTime() {
         System.out.println(hours + ":" + minutes + ":" + seconds);
     }
+
+    public void setHours(int hours) {
+        this.hours = hours;
+    }
 }

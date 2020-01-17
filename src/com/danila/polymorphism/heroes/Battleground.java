@@ -1,10 +1,12 @@
 package com.danila.polymorphism.heroes;
 
+import com.danila.generics.Beastmaster;
+
 import java.util.Random;
 
 public class Battleground {
     public static void main(String[] args) {
-        Hero hero = new Warrior("Конан-Варвар", 500, 45);
+        Hero hero = new Beastmaster("Конан-Варвар", 500, 45, "Волк", 100,20);
 
         Random random = new Random();
 

@@ -1,5 +1,7 @@
 package com.danila.polymorphism.heroes;
 
+import com.danila.generics.Beastmaster;
+
 import java.util.Random;
 
 public class Zombie extends Enemy {
@@ -12,7 +14,7 @@ public class Zombie extends Enemy {
 
     @Override
     public void attackHero(Hero hero) {
-        System.out.println(super.getName() + " бьёт " + hero.getName() + ", урон: " + super.getAttack());
+        System.out.println(super.getName() + " бьёт " + (hero instanceof Beastmaster && ((Beastmaster) hero).isBeastIsAlive() ? ((Beastmaster) hero).getBeastName() : hero.getName()) + ", урон: " + super.getAttack());
         hero.takeDamage(super.getAttack());
     }
 

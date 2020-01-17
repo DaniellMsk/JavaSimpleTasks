@@ -31,6 +31,14 @@ public abstract class Hero implements Mortal {
         return name;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public int getAttack() {
         return attack;
     }
