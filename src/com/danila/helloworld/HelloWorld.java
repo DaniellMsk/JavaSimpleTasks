@@ -1,4 +1,4 @@
-package com.danila.helloword;
+package com.danila.helloworld;
 
 public class HelloWorld {
     public static void main(String[] args) {

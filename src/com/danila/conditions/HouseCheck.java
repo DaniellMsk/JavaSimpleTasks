@@ -26,7 +26,9 @@ public class HouseCheck {
 
         boolean result = false;
 
-        if ((a+c <= e || a+d <= e || b+c <= e || b+d <= e) && (a+c <= f || a+d <= f || b+c <= f || b+d <= f)){
+        if ((((a + c <= e) && (b <= f && d <= f)) || ((b + c <= e) && (a <= f && d <= f)) || ((a + d <= e) && (b <= f && c <= f))
+                || ((b + d <= e) && (a <= f && c <= f))) || (((a + c <= f) && (b <= e && d <= e)) || ((b + c <= f) && (a <= e && d <= e)) ||
+                ((a + d <= f) && (b <= e && c <= e)) || ((b + d <= f) && (a <= e && c <= e)))){
             result = true;
         }
 
