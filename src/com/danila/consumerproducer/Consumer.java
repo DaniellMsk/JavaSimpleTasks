@@ -2,10 +2,6 @@ package com.danila.consumerproducer;
 
 import lombok.Getter;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Random;
-
 @Getter
 public class Consumer implements Runnable {
     @Override
